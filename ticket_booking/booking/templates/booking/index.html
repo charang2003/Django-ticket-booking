@@ -1,0 +1,34 @@
+{% extends 'booking/base.html' %}
+
+{% block title %}Home - Online Ticket Booking System{% endblock %}
+
+{% block content %}
+<section class="hero bg-light py-5">
+    <div class="container text-center">
+        <h1 class="animated fadeInDown">Welcome to Online Ticket Booking System</h1>
+        <p class="animated fadeInUp">Discover and book upcoming events.</p>
+        <a href="{% url 'events' %}" class="btn btn-primary btn-lg animated fadeIn">Browse Events</a>
+    </div>
+</section>
+
+<section class="features py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Why Choose Us?</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="feature bg-white p-4 shadow-sm rounded text-center animated fadeIn">
+                    <h3>Wide Range of Events</h3>
+                    <p>Explore concerts, sports, conferences, and more.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="feature bg-white p-4 shadow-sm rounded text-center animated fadeIn">
+                    <h3>Secure Booking Process</h3>
+                    <p>Ensure safe transactions and data protection.</p>
+                </div>
+            </div>
+            <!-- Add more features as needed -->
+        </div>
+    </div>
+</section>
+{% endblock %}

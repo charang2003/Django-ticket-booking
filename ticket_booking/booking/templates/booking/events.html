@@ -1,0 +1,143 @@
+{% extends 'booking/base.html' %}
+
+{% block title %}Events List - {{ block.super }}{% endblock %}
+
+{% block content %}
+    <section class="events-list-section">
+        <div class="container">
+            <h2 class="mb-4">Events List</h2>
+            <div class="row">
+                <!-- Event 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Concert</h5>
+                            <p class="card-text">Live music event featuring popular bands.</p>
+                            <p class="card-text">Date: August 15, 2024</p>
+                            <p class="card-text">Price: $30.00</p>
+                            <button class="btn btn-primary" onclick="bookTicket(1)">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sports Game</h5>
+                            <p class="card-text">Football match between top teams.</p>
+                            <p class="card-text">Date: August 20, 2024</p>
+                            <p class="card-text">Price: $40.00</p>
+                            <button class="btn btn-primary" onclick="bookTicket(2)">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Movie Premiere</h5>
+                            <p class="card-text">Exclusive screening of a highly anticipated movie.</p>
+                            <p class="card-text">Date: August 25, 2024</p>
+                            <p class="card-text">Price: $25.00</p>
+                            <button class="btn btn-primary" onclick="bookTicket(3)">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Conference</h5>
+                            <p class="card-text">Industry conference featuring keynote speakers.</p>
+                            <p class="card-text">Date: September 5, 2024</p>
+                            <p class="card-text">Price: $50.00</p>
+                            <button class="btn btn-primary" onclick="bookTicket(4)">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Art Exhibition</h5>
+                            <p class="card-text">Art showcase featuring local and international artists.</p>
+                            <p class="card-text">Date: September 10, 2024</p>
+                            <p class="card-text">Price: $20.00</p>
+                            <button class="btn btn-primary" onclick="bookTicket(5)">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Theater Performance</h5>
+                            <p class="card-text">Drama play by renowned theater group.</p>
+                            <p class="card-text">Date: September 15, 2024</p>
+                            <p class="card-text">Price: $35.00</p>
+                            <button class="btn btn-primary" onclick="bookTicket(6)">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 7 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Tech Workshop</h5>
+                            <p class="card-text">Hands-on workshop on the latest technology trends.</p>
+                            <p class="card-text">Date: September 20, 2024</p>
+                            <p class="card-text">Price: $30.00</p>
+                            <button class="btn btn-primary" onclick="bookTicket(7)">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 8 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Comedy Show</h5>
+                            <p class="card-text">Stand-up comedy night featuring top comedians.</p>
+                            <p class="card-text">Date: September 25, 2024</p>
+                            <p class="card-text">Price: $25.00</p>
+                            <button class="btn btn-primary" onclick="bookTicket(8)">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 9 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Food Festival</h5>
+                            <p class="card-text">Culinary extravaganza with delicious food stalls.</p>
+                            <p class="card-text">Date: October 1, 2024</p>
+                            <p class="card-text">Price: $15.00</p>
+                            <button class="btn btn-primary" onclick="bookTicket(9)">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 10 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Music Festival</h5>
+                            <p class="card-text">Annual music festival with multiple stages.</p>
+                            <p class="card-text">Date: October 5-6, 2024</p>
+                            <p class="card-text">Price: $50.00</p>
+                            <button class="btn btn-primary" onclick="bookTicket(10)">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+{% endblock %}
